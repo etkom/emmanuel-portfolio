@@ -17,7 +17,6 @@ header {
 }
 
 header .logo {
-  display: flex;
   width: 20%;
   align-items: flex-start;
   background: #00ffe0;
@@ -41,18 +40,15 @@ align-items: center;
 
 }
 
-header .nav-bar li {
-  list-style: none;
-
-}
-
 header .nav-bar a {
-  color: white;
+  color: #00ffe0;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
-
-
+.nav-style {
+  border-bottom: 3px solid #00ffe0
+}
 
 
 
