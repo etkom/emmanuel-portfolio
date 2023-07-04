@@ -1,4 +1,4 @@
-
+/* Global styles */
 * {
   box-sizing: border-box;
 }
@@ -138,6 +138,7 @@ header .nav-bar a {
   padding-right: 20px;
 }
 
+
 /* Styling for paragraph elements in after every subheading (h2) */
 .page-section p {
   font-size: 16px;
@@ -145,6 +146,47 @@ header .nav-bar a {
   margin: 0;
   color: #4f4f4f;
 }
+
+
+.title-block h3 {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0;
+}
+
+.title-block p {
+  font-size: 12px;
+  padding: 0;
+}
+
+
+
+.blendin-work .title-block {
+  position: relative;
+  top: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: 50px;
+  width: 180px;
+  background-color: #00ffe0;
+  padding: 4px;
+}
+
+
+.title-block {
+  position: relative;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: 50px;
+  width: 180px;
+  background-color: #00ffe0;
+  padding: 4px;
+}
+
+
 
 /* Styling for portfolio works grid */
 .work-grid {
@@ -160,6 +202,7 @@ header .nav-bar a {
   "EndChildFoodPoverty NationalRail"
   "IFA Woolroom";
 }
+
 
 .blendin-work {
   grid-area: BlendIn;
@@ -194,18 +237,4 @@ header .nav-bar a {
   height: 120px;
   border: 3px solid #00ffe0;
   background-image: url("../images/02-run-buddy.jpg");
-}
-
-
-
-  
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  
 }
