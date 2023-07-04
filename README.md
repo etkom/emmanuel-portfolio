@@ -26,6 +26,12 @@ From the home page, you can view my works displayed as cards just bellow the her
 
 ![alt Works](./images/work%20section.png)
 
+Here's the link to the portfolio:
+https://github.com/etkom/emmanuel-portfolio
+
+and the link to the live site:
+
+
 ## Credits
 
 The University of Birmingham team provided a mockup image that acted as a foundation to build this.
