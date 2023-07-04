@@ -50,7 +50,6 @@ width: 80%;
 gap: 20px;
 justify-content: flex-end;
 align-items: center;
-
 }
 
 
@@ -102,17 +101,22 @@ header .nav-bar a {
 }
 
 
-
+/* Styling for subtitle text in hero image */
 .hero-text h2 {
   color: white;
 }
 
+/* Changes the background colour below the hero area */
+.page-wrapper {
+  background-color: #000000;
+}
 
 /* Container for page section */
 .page-section {
   max-width: 100%;
-  margin-top: 40px;
+  margin-top: 0;
   display: flex;
+  padding-top: 60px;
   flex-direction: row;
 }
 
@@ -134,43 +138,53 @@ header .nav-bar a {
   font-size: 40px;
   line-height: 36px;
   text-align: right;
-  border-right: 3px solid #00ffe0;
+  border-right: 3px solid #363636;
   padding-right: 20px;
 }
 
 
 /* Styling for paragraph elements in after every subheading (h2) */
+
 .page-section p {
   font-size: 16px;
-  width: 70%;
+  font-weight: 100;
+  line-height: 2rem;
+  width: 65%;
   margin: 0;
-  color: #4f4f4f;
+  color: #ffffff;
 }
 
 
+/* Styling for headline text below the hero area */
 .title-block h3 {
   font-size: 14px;
   padding: 0px;
   margin: 0;
+  color: #00ffe0;
 }
 
+
+/* Styling for paragraph text  */
 .title-block p {
   font-size: 12px;
-  padding: 0;
+  font-weight: 100;
+  width: 65%;
+  margin: 0;
+  color: #ffffff;
 }
 
 
-
+/* Styling for card summary on homepage */
 .blendin-work .title-block {
   position: relative;
   top: 80%;
   display: flex;
   flex-direction: column;
-  gap: 0;
   height: 50px;
   width: 180px;
-  background-color: #00ffe0;
+  background-color: #000000;
   padding: 4px;
+  padding-left: 12px;
 }
 
 
@@ -179,11 +193,11 @@ header .nav-bar a {
   top: 40%;
   display: flex;
   flex-direction: column;
-  gap: 0;
   height: 50px;
   width: 180px;
-  background-color: #00ffe0;
+  background-color: #000000;
   padding: 4px;
+  padding-left: 12px;
 }
 
 
@@ -203,38 +217,153 @@ header .nav-bar a {
   "IFA Woolroom";
 }
 
-
+/* Styling for BlendIn work card*/
 .blendin-work {
   grid-area: BlendIn;
-  border: 2px solid #00ffe0;
-  background-image: url("../images/02-portfolio-4.jpg");
+  border: 1px solid #00ffe0;
+  background-image: url("../images/dark-blue-gradient-smooth-abstract-background-hor-2023-05-23-05-20-53-utc.jpg");
 }
 
 
+/* Styling for End Child Food Poverty work card */
 .end-child-food-poverty {
   grid-area: EndChildFoodPoverty;
   height: 120px;
-  border: 3px solid #00ffe0;
-  background-image: url("../images/02-portfolio-1.jpg");
+  border: 1px solid #00ffe0;
+  background-image: url("../images/End-child-food-poverty.jpg");
 }
 
+
+/* Styling for National Rail work card */
 .national-rail {
   grid-area: NationalRail;
   height: 120px;
-  border: 3px solid #00ffe0;
-  background-image: url("../images/02-portfolio-2.jpg");
+  border: 1px solid #00ffe0;
+  background-image: url("../images/National-rail.jpg");
 }
 
+
+/* Styling for IFA work card */
 .ifa {
   grid-area: IFA;
   height: 120px;
-  border: 3px solid #00ffe0;
-  background-image: url("../images/02-portfolio-3.jpg");
+  border: 1px solid #00ffe0;
+  background-image: url("../images/IFA-Dataflow.jpg");
 }
 
+
+/* Styling for Woolroom work card */
 .woolroom {
   grid-area: Woolroom;
   height: 120px;
-  border: 3px solid #00ffe0;
-  background-image: url("../images/02-run-buddy.jpg");
+  border: 1px solid #00ffe0;
+  background-image: url("../images/Woolroom.jpg");
+}
+
+
+/* Styling for page contact row */
+.page-section-contact {
+  max-width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Styling for page bottom links */
+.bottom-link-style {
+  display: flex;
+  width: 50%;
+  gap: 60px;
+  align-items: center;
+}
+
+
+/* Styling for border below page bottom links */
+.bottom-border {
+  border-bottom: 3px solid #00ffe0
+}
+
+
+/* Styling for text links at the bottom of the page */
+.bottom-link-style a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .subhead-style {
+    display: flex;
+    max-width: 100%;
+    margin: 0px 40px 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  header .nav-bar {
+    display: none;
+  }
+
+  .work-grid {
+    display: grid;
+    margin: 16px;
+    height: 100%;
+    width: 90%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    /* gap: 10px; */
+    grid-template-areas:
+    "BlendIn"
+    "EndChildFoodPoverty" 
+    "NationalRail"
+    "IFA" 
+    "Woolroom";
+  }
+
+  .page-section {
+    padding-top: 60px;
+    flex-direction: column;
+  }
+
+  .subhead-style h2 {
+    color: #2e2e2e;
+    top: 0px;
+    right: -30%;
+    width: 20%;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    border-right: 0px;
+    border-bottom: 3px solid #363636;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
+
+  .page-section p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 2rem;
+    width: 90%;
+    margin: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .page-section-contact {
+    max-width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-link-style {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    justify-content: flex-start ;
+  }
+
+
 }
