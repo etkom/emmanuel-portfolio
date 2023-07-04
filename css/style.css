@@ -97,6 +97,7 @@ header .nav-bar a {
   position: absolute;
   top: 200px;
   right: 16px;
+  border-radius: 100px 100px 100px 100px;
   
 }
 
@@ -127,6 +128,7 @@ header .nav-bar a {
 /* Styling for h2 text in content section below the fold */
 .subhead-style h2 {
   position: relative;
+  color: #2e2e2e;
   top: -30px;
   width: 200px;
   font-size: 40px;
@@ -137,14 +139,66 @@ header .nav-bar a {
 }
 
 /* Styling for paragraph elements in after every subheading (h2) */
-.subhead-style p {
+.page-section p {
   font-size: 16px;
-  font-weight: lighter;
-  width: 90%;
+  width: 70%;
   margin: 0;
   color: #4f4f4f;
 }
 
+/* Styling for portfolio works grid */
+.work-grid {
+  display: grid;
+  margin: 0px;
+  height: 100%;
+  width: 70%;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+  "BlendIn BlendIn"
+  "EndChildFoodPoverty NationalRail"
+  "IFA Woolroom";
+}
+
+.blendin-work {
+  grid-area: BlendIn;
+  border: 2px solid #00ffe0;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+
+.end-child-food-poverty {
+  grid-area: EndChildFoodPoverty;
+  height: 120px;
+  border: 3px solid #00ffe0;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+.national-rail {
+  grid-area: NationalRail;
+  height: 120px;
+  border: 3px solid #00ffe0;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+.ifa {
+  grid-area: IFA;
+  height: 120px;
+  border: 3px solid #00ffe0;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+.woolroom {
+  grid-area: Woolroom;
+  height: 120px;
+  border: 3px solid #00ffe0;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+
+
+  
 h3,
 h4,
 h5,
